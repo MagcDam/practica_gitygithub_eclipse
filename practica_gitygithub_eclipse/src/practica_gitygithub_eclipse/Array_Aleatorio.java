@@ -9,6 +9,13 @@ public class Array_Aleatorio {
     
     for (int i = 0; i < CANTIDADNUMEROS; i++) {
       numerosAleatorios[i] = (int) (Math.random()*(NUMEROMAXIMO + 1));
+      int repetidos [] = new int [CANTIDADNUMEROS];
+      for (int j = 0; j < CANTIDADNUMEROS; j++) {
+        if (numerosAleatorios [i] == i) {
+          repetidos[j]++;
+        }
+        System.out.println(repetidos[j]);
+      }
     }
 
   }
